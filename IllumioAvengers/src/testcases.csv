@@ -1,0 +1,17 @@
+*Default Test Cases
+inbound,tcp,80,192.168.1.2, valid
+outbound,tcp,10234,192.168.10.11, valid
+inbound,tcp,81,192.168.1.2, invalid
+inbound,udp,24,52.12.48.92, invalid
+*Invalid Inputs
+inbounds,tcp,80,192.168.1.2,invalid direction
+inbound,stcp,80,192.168.1.2,invalid protocol
+inbounds,tcp,0,192.168.1.2,invalid port
+inbounds,tcp,80,192.168.1.333,invalid ipadd
+*Test Cases for boundary Conditions 
+outbound,tcp,20000,192.168.10.11, valid - Port Boundary condition
+outbound,tcp,10000,192.168.10.11, valid - Port Boundary condition
+outbound,tcp,20001,192.168.10.11, Invalid - Port Boundary condition
+inbound,udp,53,192.168.1.1, valid - ip add boundary condition
+inbound,udp,53,192.168.1.0, Invalid - ip add boundary condition
+inbound,tcp,81,192.168.1.2, valid
