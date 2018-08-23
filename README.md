@@ -7,6 +7,7 @@ Illumio Coding Challenge
 The file testcases.csv file which contains all the default other tests which will check the boundary conditions. Every line of the CSV file contains the following parameters like direction, protocol, port, IP addresses. To test any test case just add it in the file in the given format. The lines with * will be ignored.
 I have added test cases that will check all the boundary conditions for the given parameters. 
 I have also added a rules_big.csv which contains 500k rules to test it for regression. Feel free to add more test cases that you would like to test.
+The TestFirewall is an test class which contains the main method. It takes the path to the rules and the test cases files.
 
 2.    Implementation of the Solution.
 
@@ -56,8 +57,8 @@ The range part makes it convoluted to implement a simple HashSet solution. Consi
 4.	Team Preference.
 
 I would love to work with the Platform team.
-I have been working as a backend developer and problems like high scalability and availability interest me. I am focusing my Master's Degree in Distributed Computing and Machine Learning and I guess the problems mentioned seems to deal with the same and would help me learn a lot about it.
+I have been working as a backend developer and problems like high scalability, performance and availability interest me. I am focusing my Master's Degree in Distributed Computing and Machine Learning and I guess the problems mentioned seems to deal with the same and would gain a lot of insights from them. In my current internship I have worked on profiling the application to find issues affecting the performance and improve it using effective soutions.
 Also, I had mentioned caching as an improvement to the above solution to improve performance and getting to work on actual problems will help me improve my understanding and tackling such problems.
 
-The platform team would be my second preference. This team is also focuses on reliability and performance about which I would like to learn a lot.
+The policy team would be my second preference. This team is also focuses on reliability and performance about which I will have a lot to learn.
 
