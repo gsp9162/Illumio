@@ -44,6 +44,10 @@ The storage space required here is the O(n) where n is the number of rules we ne
 Inserting new rules will take O(1) time but it can degrade to O(n) in the worst case considering open addressing or chaining is used.
 We can also use an Array List instead of HashSet since inserting new rules to the map will take O(1) time for ArrayList but HashSet can help avoid duplicate rules by simple overriding equals and hashCode method.
 
+The Firewall Class does the intialization of the rules based on the CSV in its constructor.This class also the method accept_packet() which checks if the packet is accepted.
+The Rule class consists of the IP Address and Port ranges.
+The UtilsImpl class has utility methods for check ranges of IP Address and Ports and also converting IP address to long values.
+
 3.    Possible Improvements.
 
 This is a simple implementation but it could it be enhanced further by using an trie structure to store the IP Addresses in the binary form or making use of HashMaps in the value for our current HashMaps.
